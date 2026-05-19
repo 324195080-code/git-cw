@@ -11,36 +11,43 @@
 
 </head>
 <body>
-<!--H - Heading -->
+    <!--H - Heading -->
     <h1>Explicar Código</h1>
-    <h2>¿Qué hace el código?</h2>
-    <h3>Registra tu edad y te indica si eres mayor o menor de edad</h3>
+    <h2>Registra tu edad y te indicará si eres mayor o menor de edad</h2>
     <hr>
     <h3>Código:</h3>
 
-<pre><code>
-#include &ltstdio.h&gt;
+    <pre><code>
+    # &ltstdio.h&gt;
 
-int main() 
-{
-    int edad;
-    printf("¿Cuántos años tienes? ");
-    scanf("%d", &edad);
-
-    if (edad >= 18) 
+    int main() 
     {
-    printf("Eres mayor de edad.\n");
-    } 
-    else 
-    {
-    printf("Eres menor de edad.\n");
-    }
+        int edad;
+        printf("¿Cuántos años tienes? ");
+        scanf("%d", &edad);
 
-return 0;
-}
-</code></pre>
+        if (edad >= 18) 
+        {
+        printf("Eres mayor de edad.\n");
+        } 
+        else 
+        {
+        printf("Eres menor de edad.\n");
+        }
 
-<p>La línea <code>#Include &ltstdio.h&gt;</code> <br> Sirve para incluir las bibliotecas</p>
-<p>Declaramos una variable de tipo numerica, con el nombre de "edad" <code>int edad;</code> </p>
-<p>Con <code>printf</code> enviamos un mensaje al ususario en estes caso seria preguntando su edad: <br> <code>printf("¿Cuántos años tienes? ");</code></p>
-<p>Enviamos la edad dada a la direcciión de la variable edad con <code>scanf("%d", &edad);</code> <br> Nota: %d es una mascára</p>
+        return 0;
+    }   
+    </code></pre>
+    <h3>Explicación:</h3>
+    <p>Empezamos con: <code>#Include &ltstdio.h&gt;</code>, <br> sirve para incluir las bibliotecas</p>
+    <p>Declaramos una variable de tipo numerica, con el nombre de "edad", <br><code>int edad;</code> </p>
+    <p>Con <code>printf</code> enviamos un mensaje al ususario en estes caso seria preguntando su edad: <br> <code>printf("¿Cuántos años tienes? ");</code></p>
+    <p>Enviamos la edad dada a la direcciión de la variable edad con <code>scanf("%d", &edad);</code> <br> Nota: %d es una máscara para números enteros</p>
+    <p>Tenemos una condicional <code>if</code> <br> En ella evalua si edad es mayor o igual a 18. <br><code>if (edad >= 18)</code>
+        <br> Si es verdad te envia un mensaje diciendo que eres mayor de edad<br><code>printf("Eres mayor de edad.\n");</code>
+        <br>Si es falso "<code>else</code>", te enviará un mensaje que eres menor de edad
+        <br><code>printf("Eres menor de edad.\n");</code></p>
+    <p>Por último tenemos <code>return 0;</code>ya que nos indica que el código se ejecuto de manerá exitosa </p>
+</body>
+
+</html>
