@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Etiquetas meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Viridiana Castro">
+    <meta name="description" content="Explicando un código C">
+    
+    <title>Código C</title>
+
+</head>
+<body>
+<!--H - Heading -->
+    <h1>Explicar Código</h1>
+    <h2>¿Qué hace el código?</h2>
+    <h3>Registra tu edad y te indica si eres mayor o menor de edad</h3>
+    <hr>
+    <h3>Código:</h3>
+
+<pre><code>
+#include &ltstdio.h&gt;
+
+int main() 
+{
+    int edad;
+    printf("¿Cuántos años tienes? ");
+    scanf("%d", &edad);
+
+    if (edad >= 18) 
+    {
+    printf("Eres mayor de edad.\n");
+    } 
+    else 
+    {
+    printf("Eres menor de edad.\n");
+    }
+
+return 0;
+}
+</code></pre>
+
+<p>La línea <code>#Include &ltstdio.h&gt;</code> <br> Sirve para incluir las bibliotecas</p>
+<p>Declaramos una variable de tipo numerica, con el nombre de "edad" <code>int edad;</code> </p>
+<p>Con <code>printf</code> enviamos un mensaje al ususario en estes caso seria preguntando su edad: <br> <code>printf("¿Cuántos años tienes? ");</code></p>
+<p>Enviamos la edad dada a la direcciión de la variable edad con <code>scanf("%d", &edad);</code> <br> Nota: %d es una mascára</p>
